@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/*universal style*/
+ a,i,button,.logo{
+    cursor: pointer;
+ }
+
+ section {
+    padding:15px 20px;
+}
+
+ .hltext {
+    color: cadetblue;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+/*header style start*/
+header {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #000;
+}
+
+header nav {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 10px;
+}
+
+header nav a {
+   color: rgb(106, 188, 190);
+    font-weight: 800;
+    transition: 1s ease-in-out;
+    font-size: 1.2rem;
+    text-transform: capitalize;   
+}
+
+header nav a:hover{
+    border-bottom: 1px solid cadetblue; 
+    color: #fff;
+    padding: 5px;
+    font-size: 1rem;
+    letter-spacing: 4px;
+}
+.menu{
+    font-size: 2rem;
+    display:none;
+}
+
+/*home/hero section start*/
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: #fff;
+    gap: 20px;
+}
+
+.hero .hero-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .hero-profile img {
+    border-radius: 50%;
+    box-shadow: 0px 0px 17px 4px rgb(100, 196, 199);
+}
+
+.hero .hero-details {
+    line-height: 2rem;
+    text-transform: capitalize;
+}
+
+.hero-btn button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: cadetblue;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-top: 2vh;
+}
+
+.hero-btn button:hover {
+    background-color: transparent;
+    color: #fff;
+    text-shadow: 0px 0px 2px #fff;
+    border: 1px solid cadetblue;
+    outline: none;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 4vh;
+    text-transform: capitalize;
+}
+/*service section start*/
+.services,
+.projects {
+    background-color: #0f0f0ffd;
+}
+
+.service-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.service-box {
+    width: 250px;
+    height: 250px;
+    
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.service-box h2 {
+    color: cadetblue;
+    text-transform: capitalize;
+}
+
+.service-box img{
+    width: 40%;
+    padding: 4px;
+}
+/*about section start*/
+.about-container p {
+    line-height: 2rem;
+}
+
+.about-container h2{
+    margin-top: 4vh;
+}
+.about-container h2 a ,
+.project-details h4 a{
+    color: red;
+}
+/*projects section start*/
+.projects{
+    width: 100%;
+}
+.project-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.project-card{
+    width: 270px;
+    padding: 4px;
+    height: auto;
+    border-radius: 8px;
+    font-size: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: 2s ease-in-out;
+}
+.project-details{
+    line-height: 2rem;
+}
+.project-card img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid #fff;
+}
+.project-card:hover{
+    transform: rotateY(45deg);
+    backdrop-filter: blur(2px);
+    box-shadow: 0px 0px 10px 5px rgb(101, 201, 204);
+    border: none;
+    color: #fff;
+    letter-spacing: 4px;
+}
+/* contract section start*/
+form {
+    width: 100%;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+form .flied1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+form .flied2{
+    height: 100%;
+    padding: 5px;
+}
+form .flied1 input,
+form .flied2 textarea {
+    padding: 8px;
+    width: 95%;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+}
+form .flied2 textarea{
+    margin: 2vh 0;
+}
+form .flied1 label,
+form .flied2 label {
+    width: 90%;
+    color: cadetblue;
+    text-align: start;
+    margin: 8px;
+    text-transform: capitalize;
+}
+
+form button{
+    padding: 10px;
+    font-size: 1rem;
+    background-color: cadetblue;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 10px 0px 10px 0;
+    margin: 4vh 0 4vh 6vw;
+    transition: 1.4s ease;
+}
+form button:hover{
+    background-color: transparent;
+    border: 1px solid cadetblue;
+    color: cadetblue;
+}
+/*footer style start*/
+footer{
+    border-top: 1px solid #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/*responsive style start*/
+@media(max-width:543px){
+    
+     header nav{
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        border: 2px solid #fff;
+       background-color: rgba(0, 0, 0,0.8);
+        border-radius: 10px 0 0 10px;
+    }
+    header nav a{
+        text-shadow: 0px 1px 0px #fff;
+        
+       
+    }
+    header h1{
+        font-size: 1rem;
+    }
+    
+    .menu{
+        display: block;
+    }
+    .hero{
+        flex-direction: column;
+    }
+    form{
+        flex-direction: column;
+    }
+    form .flied1,
+    form .flied2{
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio-homepage</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">MY Portfolio</h1>
+        <i class="menu" id="header-menu">☰</i>
+        <nav>
+            <a href="#home">home</a>
+            <a href="#service">services</a>
+            <a href="#about">about</a>
+            <a href="#projects">projects</a>
+            <a href="#contract">contract</a>
+        </nav>
+    </header>
+       
+    <section class="hero" id="home">
+        <div class="hero-profile">
+            <img src="assets/dp.jpg">
+        </div>
+        <div class="hero-details">
+            <h1>hi iam <sapn class="hltext">shivam valmiki</sapn>
+            </h1>
+            <h2>iam a <span class="hltext">frontend web developer</span></h2>
+            <p>welcome to my profile <br>iam an independent developer from delhi ,(india)</p>
+            <div class="hero-btn">
+                <button type="button" class="active">hire me</button>
+                <button type="button">read more</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="services" id="service">
+        <h1 class="heading">my <span class="hltext">services</span></h1>
+        <div class="service-container">
+            <div class="service-box">
+                <h2>frontend web design</h2>
+                <img src="assets/p1.jpg">
+                <p>unlock the full potential of your online presence with our frontend development expertise. we build website that are not only visually stunning but also highly functional and user friendly.</p>
+            </div>
+
+            <div class="service-box">
+                <h2>web performance optimization</h2>
+                <img src="assets/p2.jpg">
+                <p>We use the latest techniques and tools to optimizeimages,minify code,improve server response time,leverage browser caching,and avoid render-blocking resurces,resulting is faster page loading .</p>
+            </div>
+            <div class="service-box">
+                <h2>responsive design</h2>
+                <img src="assets/p3.jpg">
+                <p>our website features a responsive design, ensuring user experience acreoss all devices,from desktop to smartphone.</p>
+                <p>we ensure that the  website  is perfectly fit  in all devices and work properly without any problem.</p>
+
+
+            </div>
+            <div class="service-box">
+                <h2>mobile first design</h2>
+                <img src="assets/p4.png">
+                <p>we also specialize in mibile-first web design, prioritizing simple and clean visualisation to ensure user seamless user experience across all devices.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h1 class="heading">About <span class="hltext">me</span></h1>
+        <div class="about-container">
+            <img src="assets/dp.jpg" width="80px">
+            <p>Hello i am <span class="hltext">shivam valmiki</span>,<br>a frontend web developer with a passion for
+                creating visually stunning and highly functional web application with expertise in html ,css
+                ,javascript, i bring design to life and ensure seamless user experiences. my toolkit includes React,
+                Anguar ,and Vue and i'm always eager to explore new texchnologies and trends .lets collaborate to build
+                something amazing!</p>
+                <h2>resume link is here -<a href="assets/my resume.docx">click</a></h2>
+        </div>
+
+    </section>
+
+    <section class="projects" id="projects">
+        <h1 class="heading">my <span class="hltext">projects</span></h1>
+        
+        <div class="project-container">
+
+            <div class="project-card">
+                <h2 class="hltext">project 1</h2>
+                <img src="assets/p1.PNG" alt="project working"/>
+                
+            </div>
+            <div class="project-details">
+                <h2>This is the latest project</h2>
+                <p>i creat a shop application using html css ans javascript .</p>
+            </div>
+           
+        </div>
+    </section>
+
+    <section class="contract" id="contract">
+        <h1 class="heading">contract <span class="hltext">me</span></h1>
+        <form>
+            <div class="flied1">
+                <label for="fname">full name</label>
+                <input type="text" placeholder="enter full name" name="fname" required>
+
+               
+                <label for="email">email</label>
+                <input type="email" placeholder="enter your email" name="email" required>
+
+                <label for="password">password</label>
+                <input type="password" placeholder="enter your password" name="password" required>
+            </div>
+            <div class="flied2">
+             <label for="message">message</label>
+                <textarea rows="10" placeholder="message"name="message" required ></textarea>
+
+                <p>
+                    <input type="checkbox" required> i agree all trems and condation.
+                </p>
+                <button type="button">sumit</button>
+
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        &copy;2025.my portfolio.com | all reight reserved
+    </footer>
+
+    <script>
+       let hmenu= document.querySelector("header i");
+       const navbar=document.querySelector("header nav");
+      let val=0;
+      hmenu.onclick=(e)=>{
+       if(val===0){
+         navbar.style.display="flex";
+         val=1;
+       }else{
+         navbar.style.display="none";
+         val=0;
+       }
+        
+      }
+    </script>
+</body>
+
+</html>
